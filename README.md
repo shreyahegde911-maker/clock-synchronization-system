@@ -1,41 +1,36 @@
+# Clock Synchronization System
 
-Distributed Clock Synchronization System using UDP
+## 📌 Description
+This project implements distributed clock synchronization using UDP and a client-server model. It ensures consistent time across multiple systems in a network.
 
-This project synchronizes client clocks with a master server.
+## ⚙️ Technologies Used
+- Python
+- Socket Programming (UDP)
+- Distributed Systems
 
-Project Structure
------------------
-server/  -> Runs the master clock server
-client/  -> Runs synchronization client
-logs/    -> Stores synchronization logs
+## 👥 Team
+This project was developed as a group project by:
+- Shreya  
+- Shweta  
+- Vinod  
 
-Setup
------
-1. Find the server IP address (run 'ipconfig' or 'ifconfig').
-2. Edit client/config.py and replace:
+🔗 Original Repository:  
+https://github.com/Shweta1810/clock_synchronization_Project.git
 
-SERVER_IP = "CHANGE_TO_SERVER_IP"
+## 🙋‍♀️ My Contribution
+- Worked on client-server communication  
+- Contributed to testing and debugging of synchronization logic  
 
-with the server computer IP.
+---
 
-Run Server
-----------
-cd server
-python server.py
+## 📁 Project Structure
+server/ -> Runs the master clock server
+client/ -> Runs synchronization client
+logs/ -> Stores synchronization logs
 
-Run Client
-----------
-cd client
-python client.py
-
-Output
-------
-Client will display:
-- Server address
-- Offset between clocks
-- Network delay
-- Corrected synchronized time
-
-Logs
-----
-Server automatically logs client requests in logs/sync_log.txt
+Output:
+Client displays:
+-Server address
+-Offset between clocks
+-Network delay
+-Corrected synchronized time
